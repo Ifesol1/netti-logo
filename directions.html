@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>Netti · logo directions</title>
+<link rel='preconnect' href='https://fonts.googleapis.com'>
+<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@1,6..96,400..500&family=Martian+Mono:wght@400;600&family=Onest:wght@400;500;700&family=Unbounded:wght@200..900&display=swap'>
+<style>
+:root{--ink:#16151b;--pink:#d92b66;--cream:#f4efe8;--paper:#fffdf9;--line:#e4ddd3;--muted:#6b6774}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--cream);color:var(--ink);font-family:Onest,system-ui,sans-serif;padding:56px 56px 96px;-webkit-font-smoothing:antialiased}
+.top{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;border-bottom:1px solid var(--ink);padding-bottom:20px}
+.kicker{font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:Unbounded,sans-serif;font-weight:300;font-size:30px;letter-spacing:.02em;margin-top:10px}
+.intro{max-width:780px;font-size:15px;line-height:1.6;color:var(--muted);margin:20px 0 8px}
+h2{font-family:'Martian Mono',monospace;font-weight:600;font-size:11px;letter-spacing:.18em;text-transform:uppercase;margin:52px 0 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(540px,1fr));gap:24px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:6px;overflow:hidden;display:flex;flex-direction:column}
+.stage,.sw,.bar{display:flex;align-items:center;justify-content:center;color:var(--ink);--acc:var(--pink);--gap:var(--paper);overflow:hidden}
+.stage{height:250px;font-size:var(--big,60px)}
+.sws{display:grid;grid-template-columns:repeat(3,1fr)}
+.sw{height:108px;font-size:calc(var(--big,60px) * .36)}
+.sw.cream{background:var(--cream);--gap:var(--cream)}
+.dark{background:var(--ink);color:#fff;--acc:var(--pink);--gap:var(--ink)}
+.pink{background:var(--pink);color:#fff;--acc:var(--ink);--gap:var(--pink)}
+.meta{padding:16px 20px 20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:flex-start;gap:20px;margin-top:auto}
+.meta h3{font-family:Unbounded,sans-serif;font-weight:500;font-size:14px}
+.meta p{font-size:13px;line-height:1.5;color:var(--muted);margin-top:6px;max-width:370px}
+.spec{font-family:'Martian Mono',monospace;font-size:10px;line-height:1.7;color:#8d8995;text-align:right;white-space:nowrap}
+.ref{display:inline-block;font-family:'Martian Mono',monospace;font-weight:400;font-size:9px;letter-spacing:.14em;text-transform:uppercase;padding:3px 6px;border:1px solid var(--line);border-radius:3px;margin-left:8px;vertical-align:2px;color:var(--muted)}
+.m{display:inline-block;font-family:Unbounded,sans-serif;line-height:1;white-space:nowrap}
+.accent{color:var(--acc)}
+.cur{font-weight:800;letter-spacing:-.05em}
+.atelier{font-weight:300;letter-spacing:.42em;margin-right:-.42em}
+.maison{display:inline-flex;flex-direction:column;align-items:center}
+.maison .w{font-weight:500;letter-spacing:.24em;margin-right:-.24em}
+.maison .rule{width:1.6em;height:.03em;min-height:1px;background:var(--acc);margin:.42em 0 .36em}
+.maison .tg,.label .tg{font-family:'Martian Mono',monospace;font-size:.17em;letter-spacing:.36em;margin-right:-.36em}
+.couture{font-weight:900;letter-spacing:-.045em}
+.twin{font-weight:600;letter-spacing:.1em;margin-right:-.1em}
+.twin .t1{letter-spacing:-.05em}
+.quiet{font-weight:200;letter-spacing:.05em;margin-right:-.05em}
+.idot{position:relative}
+.idot::after{content:'';position:absolute;left:50%;top:.16em;width:.12em;height:.12em;margin-left:-.06em;border-radius:50%;background:var(--acc)}
+.label{display:inline-flex;flex-direction:column;align-items:center;border:.03em solid currentColor;padding:.55em 1.05em .5em}
+.label .w{font-weight:400;letter-spacing:.38em;margin-right:-.38em}
+.label .tg{margin-top:.95em}
+.emblem{width:1.5em;height:1.5em}
+.mono{display:block;width:100%;height:100%}
+.mono .i{fill:currentColor}
+.mono .p{fill:var(--acc)}
+.mono .g{stroke:var(--gap);stroke-width:3;paint-order:stroke}
+.emblem.bare .ring{display:none}
+.pattern{height:250px;display:grid;grid-template-columns:repeat(10,1fr);grid-auto-rows:60px;align-content:center;align-items:center;justify-items:center;background:var(--pink);color:#fff;--acc:var(--ink);--gap:var(--pink);overflow:hidden;font-size:30px}
+.seal svg{display:block;width:2.6em;height:2.6em}
+.seal .sacc{fill:var(--acc)}
+.serif{font-family:'Bodoni Moda',serif;font-style:italic;font-weight:400;font-size:1.3em;letter-spacing:-.005em}
+.bars{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:18px}
+figure{margin:0}
+.bar{height:62px;background:var(--paper);border:1px solid var(--line);border-radius:6px;justify-content:space-between;padding:0 16px;font-size:23px}
+.bar i{display:inline-block;width:32px;height:32px;border-radius:50%;background:var(--cream);margin-left:8px;vertical-align:middle}
+figcaption{font-family:'Martian Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:10px}
+.icons{display:flex;gap:28px;flex-wrap:wrap}
+.icons figure{text-align:center}
+.ic{width:136px;height:136px;border-radius:30px;display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:0 12px 28px -14px rgba(22,21,27,.45)}
+.ic.paper{background:var(--paper);color:var(--ink);--acc:var(--pink);--gap:var(--paper);border:1px solid var(--line)}
+.foot{margin-top:56px;font-size:12px;color:var(--muted)}
+a{color:inherit}
+@media (max-width:760px){
+body{padding:32px 18px 72px}
+.top{flex-direction:column;align-items:flex-start;gap:10px}
+.grid,.bars{grid-template-columns:1fr}
+.stage{height:200px;font-size:calc(var(--big,60px) * .72)}
+.sw{height:84px;font-size:calc(var(--big,60px) * .25)}
+.meta{flex-direction:column;gap:10px}
+.spec{text-align:left}
+.pattern{grid-template-columns:repeat(6,1fr);font-size:24px}
+.icons{gap:18px}
+.ic{width:112px;height:112px;border-radius:26px}
+}
+</style>
+</head>
+<body>
+<header class='top'>
+<div><div class='kicker'>Netti · brand</div><h1>Logo directions</h1></div>
+<div class='kicker'>Draft · 29 Oct 2026 · <a href='./'>Set two: premium →</a></div>
+</header>
+<p class='intro'>Nine directions for a more premium Netti, all built from the app's own display font, Unbounded, with Martian Mono (already in the app too) for the small lines. One fashion serif is at the end for contrast. Each mark is shown large, then smaller on cream, ink and Netti pink. Today's logo comes first for reference.</p>
+
+<h2>Wordmarks</h2>
+<section class='grid'>
+
+<article class='card' data-bar='Today' style='--big:64px'>
+<div class='stage'><span class='m cur'>net<span class='accent'>t</span>i</span></div>
+<div class='sws'><div class='sw cream'></div><div class='sw dark'></div><div class='sw pink'></div></div>
+<div class='meta'><div><h3>Today<span class='ref'>reference</span></h3><p>Lowercase ExtraBold set tight, with the second t in Netti pink for the two wolves. Friendly and app-like.</p></div><div class='spec'>Unbounded 800<br>tracking −5%<br>lowercase</div></div>
+</article>
+
+<article class='card' data-bar='1 · Atelier' style='--big:50px'>
+<div class='stage'><span class='m atelier'>NETTI</span></div>
+<div class='sws'><div class='sw cream'></div><div class='sw dark'></div><div class='sw pink'></div></div>
+<div class='meta'><div><h3>1 · Atelier</h3><p>Light capitals with wide spacing, the quiet confidence of a fashion house. The pink leaves the mark and lives around it instead.</p></div><div class='spec'>Unbounded 300<br>tracking +42%<br>capitals</div></div>
+</article>
+
+<article class='card' style='--big:54px'>
+<div class='stage'><span class='m maison'><span class='w'>NETTI</span><span class='rule'></span><span class='tg'>SWIPE · STYLE · SHOP</span></span></div>
+<div class='sws'><div class='sw cream'></div><div class='sw dark'></div><div class='sw pink'></div></div>
+<div class='meta'><div><h3>2 · Maison lockup</h3><p>Medium capitals over a pink hairline, with the app's own line in Martian Mono. For the splash screen, packaging and the website.</p></div><div class='spec'>Unbounded 500, +24%<br>Martian Mono 400<br>pink hairline</div></div>
+</article>
+
+<article class='card' data-bar='3 · Couture' style='--big:66px'>
+<div class='stage'><span class='m couture'>NETTI</span></div>
+<div class='sws'><div class='sw cream'></div><div class='sw dark'></div><div class='sw pink'></div></div>
+<div class='meta'><div><h3>3 · Couture</h3><p>Black capitals, as heavy as the font goes, set tight. Loud like a runway house: strongest huge, on bags and billboards.</p></div><div class='spec'>Unbounded 900<br>tracking −4.5%<br>no pink</div></div>
+</article>
+
+<article class='card' data-bar='4 · Twin T' style='--big:56px'>
+<div class='stage'><span class='m twin'>NE<span class='t1'>T</span><span class='accent'>T</span>I</span></div>
+<div class='sws'><div class='sw cream'></div><div class='sw dark'></div><div class='sw pink'></div></div>
+<div class='meta'><div><h3>4 · Twin T</h3><p>The two T's share one crossbar, running from ink into pink: the two wolves holding on. Today's story, grown up.</p></div><div class='spec'>Unbounded 600<br>tracking +10%<br>TT joined</div></div>
+</article>
+
+<article class='card' data-bar='5 · Quiet' style='--big:72px'>
+<div class='stage'><span class='m quiet'>nett<span class='idot'>ı</span></span></div>
+<div class='sws'><div class='sw cream'></div><div class='sw dark'></div><div class='sw pink'></div></div>
+<div class='meta'><div><h3>5 · Quiet lowercase</h3><p>ExtraLight lowercase with the dot of the i in Netti pink. Soft and expensive, and the closest to today's lowercase logo.</p></div><div class='spec'>Unbounded 200<br>tracking +5%<br>pink i-dot</div></div>
+</article>
+
+<article class='card' style='--big:46px'>
+<div class='stage pink'><span class='m label'><span class='w'>NETTI</span><span class='tg'>SWIPE · STYLE · SHOP</span></span></div>
+<div class='sws'><div class='sw cream'></div><div class='sw dark'></div><div class='sw pink'></div></div>
+<div class='meta'><div><h3>6 · Woven label</h3><p>The mark as a sewn-in clothing label. For tags, stickers, order emails and shipping boxes.</p></div><div class='spec'>Unbounded 400, +38%<br>Martian Mono 400<br>stitched frame</div></div>
+</article>
+
+<article class='card' style='--big:80px'>
+<div class='stage'><span class='m emblem'><svg class='mono' viewBox='0 0 100 100' role='img' aria-label='Twin-T monogram'><circle class='ring' cx='50' cy='50' r='47' fill='none' stroke='currentColor' stroke-width='1.6'/><rect class='p' x='56' y='25' width='12' height='50'/><rect class='i g' x='14' y='25' width='54' height='12'/><rect class='i' x='32' y='25' width='12' height='50'/><rect class='p g' x='32' y='63' width='54' height='12'/><rect class='p' x='56' y='38.5' width='12' height='36.5'/></svg></span></div>
+<div class='sws'><div class='sw cream'></div><div class='sw dark'></div><div class='sw pink'></div></div>
+<div class='meta'><div><h3>7 · Twin-T monogram</h3><p>Two T's, one turned over and interlocked inside a ring, like a fashion-house monogram. For the app icon, the favicon and small spaces.</p></div><div class='spec'>Unbounded 600<br>T + inverted T<br>hairline ring</div></div>
+</article>
+
+<article class='card'>
+<div class='pattern' id='pattern'></div>
+<div class='meta'><div><h3>8 · Monogram print</h3><p>The monogram repeated as a print: tissue paper, mailer bags, the inside of a tote, a loading screen.</p></div><div class='spec'>Twin-T monogram<br>on Netti pink<br>repeat 10 × 4</div></div>
+</article>
+
+<article class='card' style='--big:80px'>
+<div class='stage'><span class='m seal'><svg viewBox='0 0 200 200' role='img' aria-label='Netti seal'><defs><path id='ring' d='M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0'/></defs><circle cx='100' cy='100' r='96' fill='none' stroke='currentColor' stroke-width='1.5'/><circle cx='100' cy='100' r='62' fill='none' stroke='currentColor' stroke-width='1'/><text font-family='Unbounded' font-weight='500' font-size='13' fill='currentColor'><textPath href='#ring' textLength='496' lengthAdjust='spacing'>NETTI <tspan class='sacc'>·</tspan> SWIPE <tspan class='sacc'>·</tspan> STYLE <tspan class='sacc'>·</tspan> SHOP <tspan class='sacc'>·</tspan></textPath></text><text x='100' y='102' text-anchor='middle' dominant-baseline='central' font-family='Unbounded' font-weight='300' font-size='60' fill='currentColor'>N</text></svg></span></div>
+<div class='sws'><div class='sw cream'></div><div class='sw dark'></div><div class='sw pink'></div></div>
+<div class='meta'><div><h3>9 · Seal</h3><p>A round stamp with the app's line around a light N. For stickers, receipts and the back of packaging.</p></div><div class='spec'>Unbounded 500 + 300<br>text on a ring<br>pink dots</div></div>
+</article>
+
+<article class='card' data-bar='Off-brief · Serif' style='--big:64px'>
+<div class='stage'><span class='m serif'>Net<span class='accent'>t</span>i</span></div>
+<div class='sws'><div class='sw cream'></div><div class='sw dark'></div><div class='sw pink'></div></div>
+<div class='meta'><div><h3>Off-brief · Fashion serif</h3><p>Bodoni Moda italic, the classic magazine look. Not the Netti font: it's here only to compare against the Unbounded directions.</p></div><div class='spec'>Bodoni Moda 400<br>italic<br>for contrast only</div></div>
+</article>
+
+</section>
+
+<h2>At header size, 23 px</h2>
+<section class='bars' id='bars'></section>
+
+<h2>As an app icon</h2>
+<section class='icons'>
+<figure><div class='ic' style='background:#d92b66 url(icon.png) center/cover'></div><figcaption>Today</figcaption></figure>
+<figure><div class='ic pink'><span class='m' style='font-weight:300;font-size:78px'>N</span></div><figcaption>Atelier N</figcaption></figure>
+<figure><div class='ic dark'><span class='m emblem bare' style='font-size:64px'><svg class='mono' viewBox='0 0 100 100' role='img' aria-label='Twin-T monogram'><circle class='ring' cx='50' cy='50' r='47' fill='none' stroke='currentColor' stroke-width='1.6'/><rect class='p' x='56' y='25' width='12' height='50'/><rect class='i g' x='14' y='25' width='54' height='12'/><rect class='i' x='32' y='25' width='12' height='50'/><rect class='p g' x='32' y='63' width='54' height='12'/><rect class='p' x='56' y='38.5' width='12' height='36.5'/></svg></span></div><figcaption>Twin-T monogram</figcaption></figure>
+<figure><div class='ic paper'><span class='m twin' style='font-size:54px'><span class='t1'>T</span><span class='accent'>T</span></span></div><figcaption>Twin T</figcaption></figure>
+<figure><div class='ic pink' id='sealicon'></div><figcaption>Seal</figcaption></figure>
+</section>
+<p class='foot'>Fonts load from Google Fonts. Nothing in the app was changed.</p>
+
+<script>
+document.querySelectorAll('.card').forEach(function(card){
+  var mark=card.querySelector('.stage > .m');
+  if(!mark) return;
+  card.querySelectorAll('.sw').forEach(function(sw){sw.appendChild(mark.cloneNode(true));});
+  if(card.dataset.bar){
+    var fig=document.createElement('figure');
+    var bar=document.createElement('div'); bar.className='bar';
+    var right=document.createElement('span'); right.innerHTML='<i></i><i></i>';
+    bar.appendChild(mark.cloneNode(true)); bar.appendChild(right);
+    var cap=document.createElement('figcaption'); cap.textContent=card.dataset.bar;
+    fig.appendChild(bar); fig.appendChild(cap);
+    document.getElementById('bars').appendChild(fig);
+  }
+});
+var pat=document.getElementById('pattern');
+for(var i=0;i<40;i++){var s=document.createElement('span');s.className='m emblem bare';s.innerHTML=document.querySelector('.stage .mono').outerHTML;pat.appendChild(s);}
+var sc=document.querySelector('.stage .seal').cloneNode(true); sc.style.fontSize='44px'; document.getElementById('sealicon').appendChild(sc);
+</script>
+</body>
+</html>
